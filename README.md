@@ -12,11 +12,11 @@ cloud.aws.region.static=ap-northeast-2
 cloud.aws.stack.auto=false
 ```
 # Controller
-- 이미지 파일을 http://localhost:8080/aws 엔드포인트로 POST 요청을 통해 전송하고, 서버가 이미지를 AWS S3에 저장한 후 해당 이미지의 URL을 반환합니다.
+- 파일을 http://localhost:8080/aws 엔드포인트로 POST 요청을 통해 전송하고, 해당 파일을 AWS S3에 저장한 후 URL을 반환합니다.
 ### 요청
 - URL: http://localhost:8080/aws
 - HTTP 메서드: POST
 - 컨텐츠 타입: multipart/form-data
-- 요청 바디: 폼 데이터에 포함된 이미지 파일
+- 요청 바디: 폼 데이터에 포함된 파일
 ### 응답
-- 이미지의 URL을 반환합니다.
+- URL을 반환합니다.
